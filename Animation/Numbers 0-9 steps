@@ -19,7 +19,7 @@
     transform: translate(-90%);
     transition-property: transform;
     transition-duration: 9s;
-    transition-timing-function: steps(9, start);
+    transition-timing-function: steps(9, end);
   }
 </style>
 </head>
