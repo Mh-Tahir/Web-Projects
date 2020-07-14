@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>API карт 2ГИС</title>
+	<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full">
+	</script>
+	<script type="text/javascript">
+		navigator.geolocation.getCurrentPosition(function(position) {
+              var x = position.coords.latitude; 
+              var y = position.coords.longitude;
+              var map;
+
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [x, y],
+                    zoom: 13
+                });
+
+                DG.marker([x, y]).addTo(map).bindPopup('Ваша геолокация');
+            });
+            });
+	</script>
+</head>
+
+<body>
+	<div id="map" style="width:500px; height:400px"></div>
+</body>
+
+</html>
