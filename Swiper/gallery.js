@@ -1,22 +1,22 @@
 new Swiper(".swiper-container", {
   speed: 400,
-  spaceBetween: 100,
+  spaceBetween: 0,
   loop: true,
   effect: "slide",
   slidesPerView: 2,
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 const { styler, spring, listen, pointer, value } = window.popmotion;
 
-const ball = document.querySelector(".brand");
+const ball = document.querySelector(".draggable");
 const divStyler = styler(ball);
 const ballXY = value({ x: 0, y: 0 }, divStyler.set);
 
-listen(ball, "mousedown touchstart").start(e => {
+listen(ball, "mousedown touchstart").start((e) => {
   e.preventDefault();
   pointer(ballXY.get()).start(ballXY);
 });
@@ -26,8 +26,6 @@ listen(document, "mouseup touchend").start(() => {
     from: ballXY.get(),
     velocity: ballXY.getVelocity(),
     to: { x: 0, y: 0 },
-    stiffness: 200
-    // mass: 1,
-    // damping: 10
+    stiffness: 200,
   }).start(ballXY);
 });

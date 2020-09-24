@@ -1,46 +1,53 @@
-.swiper-slide {
-  text-align: center;
-}
-
-img {
-  height: 100%;
-  width: 100%;
-}
-
 body {
   padding: 0;
-  margin: 0;
-  background-color: palevioletred;
-  background-repeat: repeat;
+  margin: 0 auto;
+  background-color: peachpuff;
+  position: relative;
+  align-content: center;
 }
 
 .main {
-  color: aliceblue;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 15px;
-  text-align: center;
+  z-index: 10;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
+  position: static;
 }
 
-.brand {
-  position: relative;
-  margin: 0;
-  font-size: 50px;
+.draggable {
   cursor: grab;
-  z-index: 10;  
-  border: 10px solid palevioletred;
+  z-index: 10;
+  position: absolute;
+  top: 25%;
+}
+.ball {
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
 }
 
-.emoji {
+.text {
   position: absolute;
-  top: 30%;
-  width: 100%;
-  text-align: center;
-  font-size: 50px;
+  top: 45%;
+  left: 30%;
+  font-size: 24pt;
+  font-family: fantasy;
+  color: azure;
+  text-shadow: 2px 2px #777;
+}
+
+@media (max-width: 1000px) {
+  .ball {
+    width: 200px;
+  }
+  .text {
+    font-size: 18pt;
+  }
+}
+
+@media (max-width: 700px) {
+  .ball {
+    width: 125px;
+  }
+  .text {
+    font-size: 12pt;
+  }
 }
