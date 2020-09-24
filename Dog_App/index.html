@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Doggo App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Doggo App</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <h1>Doggo App</h1>
+        </li>
+        <li>
+          <select id="breed"></select>
+        </li>
+      </ul>
+    </nav>
 
-<body>
-  <nav>
-    <ul class="nav-list">
-      <li>
-        <h1>Doggo App</h1>
-      </li>
-      <li>
-        <select id="breed">
-        </select>
-      </li>
-    </ul>
-  </nav>
+    <div class="container">
+      <img
+        id="main"
+        class="main-image"
+        src="https://placedog.net/640/480?random"
+        alt="main viewer"
+      />
+      <span id="loader" class="loading-dog show">🐶</span>
+    </div>
 
-  <div class="container">
-    <img id="main" class="main-image" src="http://placecorgi.com/260/180" alt="main viewer" />
-    <span id="loader" class="loading-dog show">🐶</span>
-  </div>
-
-
-  <script src="./doggos.js"></script>
-</body>
-
+    <script src="./doggos.js"></script>
+  </body>
 </html>
