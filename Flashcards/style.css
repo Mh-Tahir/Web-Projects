@@ -7,20 +7,20 @@
 .map {
   background-image: url("./world.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .cards {
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 1vmin;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   justify-content: center;
 }
 
 .container {
-  perspective: 1000px;
+  perspective: 100vw;
 }
 
 .container:hover .card {
@@ -28,8 +28,8 @@
 }
 
 .card {
-  width: 150px;
-  height: 150px;
+  width: 20vmin;
+  height: 20vmin;
   position: relative;
   transition: all 1s linear;
   transform-style: preserve-3d;
@@ -41,10 +41,10 @@
   width: 100%;
   text-align: center;
   margin: auto;
-  padding: 1em;
-  border-radius: 10px;
+  padding: 1vmin;
+  border-radius: 3vmin;
   font-family: "Roboto Light", sans-serif;
-  font-size: 16pt;
+  font-size: 3vmin;
   font-weight: bolder;
   position: absolute;
   display: flex;
@@ -66,12 +66,16 @@
   transform: rotateY(180deg);
 }
 
-h1 {
+span {
   text-align: center;
   font-family: "Roboto Thin", sans-serif;
   color: chocolate;
-  margin: 1em auto;
+  margin: 2vmin auto;
   text-shadow: 0 2px antiquewhite;
   border: 20px dotted antiquewhite;
-  width: 600px;
+  width: 50%;
+  font-size: 5vmin;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
