@@ -1,74 +1,77 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .map {
-    height: 100vh   ;
-    background-image: url("./world.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  background-image: url("./world.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .cards {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    justify-content: center;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
 }
 
 .container {
-    perspective: 1000px;
+  perspective: 1000px;
 }
 
-.container:hover .card{
-    transform: rotateY(180deg);
+.container:hover .card {
+  transform: rotateY(180deg);
 }
 
 .card {
-    width: 150px;
-    height: 150px;
-    position: relative;
-    transition: all 1s linear;
-    transform-style: preserve-3d;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
 }
 
-.front, .back {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    background-color: antiquewhite;
-    color: coral;
-    margin: auto;
-    padding: 1em;
-    border-radius: 10px;
-    font-family: "Roboto Light", sans-serif;
-    font-size: 12pt;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 1em;
+  border-radius: 10px;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 16pt;
+  font-weight: bolder;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .front {
-    z-index: 2;
-    backface-visibility: hidden;
+  background-color: antiquewhite;
+  color: coral;
+  z-index: 2;
+  backface-visibility: hidden;
 }
 
 .back {
-    z-index: 1;
-    transform: rotateY(180deg);
+  background-color: coral;
+  color: antiquewhite;
+  z-index: 1;
+  transform: rotateY(180deg);
 }
 
 h1 {
-    text-align: center;
-    font-family: "Roboto Thin", sans-serif;
-    color: chocolate;
-    margin: 1em auto;
-    text-shadow: 0 2px antiquewhite;
-    border: 20px dotted antiquewhite;
-    width: 600px;
+  text-align: center;
+  font-family: "Roboto Thin", sans-serif;
+  color: chocolate;
+  margin: 1em auto;
+  text-shadow: 0 2px antiquewhite;
+  border: 20px dotted antiquewhite;
+  width: 600px;
 }
