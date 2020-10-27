@@ -34,7 +34,7 @@ body {
   text-shadow: 2px 2px #777;
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .ball {
     width: 200px;
   }
@@ -43,7 +43,7 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .ball {
     width: 125px;
   }
