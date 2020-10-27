@@ -3,7 +3,7 @@
 }
 
 body {
-  cursor: url(./cursor.png), default;
+  cursor: url(images/cursor.png), default;
   background-color: #c0c86d;
   display: flex;
   justify-content: center;
@@ -15,8 +15,32 @@ body {
   width: 100vw;
 }
 
+@media only screen and (max-device-width: 1440px) {
+  body {
+    transform: scale(0.5);
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  body {
+    transform: scale(0.4);
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  body {
+    transform: scale(0.4) rotate(90deg);
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  body {
+    transform: scale(0.3) rotate(90deg);
+  }
+}
+
 .bg {
-  background-image: url(./background.png);
+  background-image: url(images/background.png);
   background-repeat: no-repeat;
   width: 1920px;
   height: 1080px;
@@ -47,7 +71,7 @@ body {
 }
 
 .hungry {
-  cursor: url(./cursor-worm.png), pointer;
+  cursor: url(images/cursor-worm.png), pointer;
 }
 
 .gone {
