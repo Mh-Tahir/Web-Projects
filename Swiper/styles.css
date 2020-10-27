@@ -7,16 +7,16 @@ body {
 }
 
 .main {
-  z-index: 10;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
   position: static;
 }
 
-.draggable {
+.drag {
   cursor: grab;
-  z-index: 10;
+  z-index: 2;
   position: absolute;
   top: 25%;
 }
