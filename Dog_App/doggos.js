@@ -1,7 +1,9 @@
-const BREEDS_URL = "https://dog.ceo/api/breeds/list/all";
-const select = document.querySelector('#breed');
+const URL = "https://dog.ceo/api/breeds/list/all";
+let select = document.querySelector('#breed');
+let img = document.querySelector('.main-image');
+let spinner = document.querySelector('.loading-dog');
 
-fetch(BREEDS_URL)
+fetch(URL)
   .then(response => {
     return response.json();
   })
@@ -20,13 +22,10 @@ fetch(BREEDS_URL)
 select.addEventListener('change', function(event) {
   let url = `https://dog.ceo/api/breed/${event.target.value}/images/random`;
 
-  getDoggo(url);
+  getDog(url);
 });
 
-const img = document.querySelector('.main-image');
-const spinner = document.querySelector('.loading-dog');
-
-function getDoggo (url) {
+function getDog (url) {
   spinner.classList.add('show');
   img.classList.remove('show');
   fetch(url)
