@@ -28,7 +28,7 @@ nav {
 }
 
 .loading-dog {
-  animation: spin 1s infinite linear;
+  animation: spin 0.5s infinite linear;
   font-size: 100px;
   display: none;
 }
