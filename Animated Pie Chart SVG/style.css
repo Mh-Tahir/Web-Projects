@@ -1,0 +1,131 @@
+@import url(//db.onlinewebfonts.com/c/07a38bbad54db72a40b406bed1c72f53?family=Gotham+Pro);
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.eot");
+  src: url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.svg#Gotham Pro") format("svg");
+}
+
+@keyframes rotation {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.wrapper {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+}
+circle {
+  animation: rotation 2s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+@keyframes stretch {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 1;
+  }
+}
+.colored {
+  animation: stretch 2s;
+}
+.text {
+  font-family: "Arial", sans-serif;
+  alignment-baseline: central;
+  text-anchor: middle;
+}
+.text:nth-child(1) {
+  font-family: "Gotham Pro", sans-serif;
+  fill: #555;
+  font-size: 7px;
+}
+.text:nth-child(2) {
+  font-family: "Gotham Pro", sans-serif;
+  fill: #555;
+  font-size: 3.5px;
+}
+.text:nth-child(3) {
+  font-family: "Gotham Pro", sans-serif;
+  fill: #ccc;
+  font-size: 2.5px;
+}
+.text:nth-child(4) {
+  font-family: "Gotham Pro", sans-serif;
+  fill: #555;
+  font-size: 3px;
+  font-weight: bold;
+}
+.text:nth-child(5) {
+  fill: #fbd229;
+  font-size: 2.4px;
+  font-weight: bold;
+}
+.text:nth-child(6),
+.text:nth-child(7),
+.text:nth-child(8) {
+  fill: #ccc;
+  font-size: 1.6px;
+}
+.text:nth-child(9) {
+  fill: #70a74b;
+  font-size: 2px;
+}
+.text:nth-child(10) {
+  fill: #70a74b;
+  font-size: 2.5px;
+}
+.flag {
+  opacity: 0.2;
+  position: absolute;
+  left: 94px;
+  top: -28px;
+}
+.legend {
+  font-family: "Gotham Pro", sans-serif;
+  alignment-baseline: central;
+  text-anchor: middle;
+  fill: #555;
+  font-size: 1.05px;
+  font-weight: bold;
+}
+.legend:nth-child(2),
+.legend:nth-child(5),
+.legend:nth-child(8) {
+  font-family: "Arial", sans-serif;
+}
+.legend:nth-child(3),
+.legend:nth-child(6),
+.legend:nth-child(9) {
+  font-family: "Arial", sans-serif;
+  fill: #ccc;
+}
+.legend:nth-child(10),
+.legend:nth-child(11),
+.legend:nth-child(12) {
+  font-family: "Arial", sans-serif;
+  fill: #555;
+  font-weight: normal;
+}
+.person {
+  opacity: 0.4;
+  transform: scale(0.05);
+  position: absolute;
+  left: 5px;
+}
+.person-1 {
+  top: 190px;
+}
+.person-2 {
+  top: 238px;
+}
+.person-3 {
+  top: 286px;
+}
