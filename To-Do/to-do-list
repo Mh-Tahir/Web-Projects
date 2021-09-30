@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        input:checked + span {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+<h1>To-Do List</h1>
+<input type="text" id="input-task" value="">
+<button id="add-task-button">Add Task</button>
+<ul id="task-list">
+</ul>
+<script>
+    const input = document.getElementById("input-task");
+    const addBtn = document.getElementById("add-task-button");
+    const list = document.getElementById("task-list");
+    let taskList = JSON.parse(localStorage.getItem("tasks")) || [];
+    const deleteLi = (e) => {
+        taskList = taskList.filter(x => x.text !== e.target.previousSibling.innerHTML);
+        localStorage.setItem("tasks", JSON.stringify(taskList));
+        e.target.parentElement.remove();
+    }
+    const checkLi = (e) => {
+        let i = taskList.findIndex(x => x.text === e.target.nextSibling.innerHTML);
+        taskList[i].check = !taskList[i].check;
+        localStorage.setItem("tasks", JSON.stringify(taskList));
+    }
+    const createLi = () => {
+        let newLi = document.createElement('li');
+        newLi.innerHTML = `<input type="checkbox"><span class="task">${input.value}</span><button class="delete-btn">Delete Task</button>`;
+        list.appendChild(newLi);
+        newLi.querySelector(".delete-btn").addEventListener('click', deleteLi);
+        newLi.querySelector("[type='checkbox']").addEventListener("click", checkLi);
+        taskList.push({text: input.value, check: false});
+        localStorage.setItem("tasks", JSON.stringify(taskList));
+        input.value = '';
+    }
+    const addTasks = () => {
+        for (let i in taskList) {
+            let newLi = document.createElement('li');
+            newLi.innerHTML = `<input type="checkbox" ${taskList[i].check ? "checked" : null}><span class="task">${taskList[i].text}</span><button class="delete-btn">Delete Task</button>`;
+            newLi.querySelector("[type='checkbox']").addEventListener("click", checkLi);
+            list.appendChild(newLi);
+            newLi.querySelector(".delete-btn").addEventListener('click', deleteLi);
+        }
+    }
+    addBtn.addEventListener('click', createLi);
+    addTasks();
+</script>
+</body>
+</html>
