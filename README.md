@@ -10,6 +10,8 @@ https://mh-tahir.github.io/Web-Projects/Dog_App
 
 https://mh-tahir.github.io/Web-Projects/Game_Feed_Moles
 
+https://mh-tahir.github.io/Web-Projects/Whack-a-Mole
+
 https://mh-tahir.github.io/Web-Projects/Calculator
 
 https://mh-tahir.github.io/Web-Projects/Animated_Pie_Chart_SVG
