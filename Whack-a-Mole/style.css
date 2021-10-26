@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 3px;
+}
+.flex {
+  display: flex;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+.center div {
+  padding: 20px;
+}
+.grid {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.square {
+  width: 30%;
+  height: 200px;
+  border: 2px solid black;
+}
+.mole {
+  background: no-repeat center/contain
+    url(https://www.clipartmax.com/png/full/36-367449_krtek-by-leo-chelny-mole-cartoon.png);
+}
