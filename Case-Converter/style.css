@@ -1,0 +1,14 @@
+textarea {
+    display: block;
+    margin: 10px 0;
+}
+#save-text-file {
+    display: block;
+    margin-top: 10px;
+}
+button {
+    padding: 10px 20px;
+}
+.title {
+    font-size: 32px;
+}
