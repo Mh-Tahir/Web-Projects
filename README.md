@@ -14,6 +14,8 @@ https://mh-tahir.github.io/Web-Projects/Whack-a-Mole
 
 https://mh-tahir.github.io/Web-Projects/Calculator
 
+https://mh-tahir.github.io/Web-Projects/Case-Converter/
+
 https://mh-tahir.github.io/Web-Projects/Animated_Pie_Chart_SVG
 
 https://mh-tahir.github.io/Web-Projects/Browse_Pictures
