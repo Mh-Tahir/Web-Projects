@@ -1,0 +1,155 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: darkslategray;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 1em 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 0 1em;
+}
+a {
+  text-decoration: none;
+  color: aquamarine;
+  font-size: 1.5em;
+}
+
+.image {
+  width: 20em;
+  border-radius: 2em;
+  transition: 0.5s;
+  margin: 0.5em 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 0.5em;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+}
+.projects h1 {
+  margin: 0.25em 0 1em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.5em;
+}
+
+h1 {
+  font-size: 3rem;
+  transition: 0.5s;
+}
+
+h1, a:hover {
+  text-shadow: 2px 2px black;
+}
+h1:hover {
+  text-shadow: 0 1em black;
+  cursor: pointer;
+  transform: text-shadow;
+}
+.image:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px azure, -2px -2px 10px azure;
+}
+span{
+  transition: 0.5s;
+  display: inline-block;
+  font-size: 2.5em;
+  color: lightseagreen;
+  text-shadow: 2px 2px black;
+  margin: 0.25em;
+}
+span:hover {
+  color: black;
+  cursor: pointer;
+  transform: scale(1.5);
+  text-shadow: 1px 1px lightseagreen;
+}
+footer {
+  text-align: center;
+  margin: 1em 0;
+}
+.cards {
+  display: flex;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  border: black solid 2px;
+  border-top: none;
+  border-radius: 1rem;
+  margin: 0.5em;
+  padding: 0 0.25em 0.25em;
+  background-color: black;
+  transition: 0.5s;
+}
+.card:hover {
+  box-shadow: 2px 2px 10px azure, -2px -2px 10px azure;
+}
+.card-image {
+  width: 15rem;
+  border-radius: 1rem 1rem 0 0;
+  border: 2px inset black;
+}
+.card-title a:hover  {
+  text-shadow: 1px 0 azure;
+}
+
+@media screen and (max-width: 600px) {
+  .info {
+    flex-direction: column;
+  }
+  .image {
+    width: 15em;
+  }
+  h1 {
+    margin: 0 0 1.5rem;
+    font-size: 2rem;
+  }
+  h1 + h1 {
+    margin-top: 0;
+  }
+  span {
+    font-size: 1.75em;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}
