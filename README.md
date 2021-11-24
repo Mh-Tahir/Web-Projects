@@ -8,6 +8,8 @@
 
 [Random Quote Generator](https://mh-tahir.github.io/Web-Projects/Quote_Generator)
 
+[Image Filter](https://mh-tahir.github.io/Web-Projects/Filter/)
+
 [Random Dog App](https://mh-tahir.github.io/Web-Projects/Dog_App)
 
 [Feed Moles Game](https://mh-tahir.github.io/Web-Projects/Game_Feed_Moles)
