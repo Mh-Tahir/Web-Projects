@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana;
+}
+#canvas {
+    border: 2px silver solid;
+    float: left;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 250px;
+    height: 500px;
+    padding: 25px;
+    background-color: azure;
+    border: 2px silver solid;
+}
+button {
+    background-color: seagreen;
+    border: 2px silver solid;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+}
+label {
+    text-align: center;
+    margin-top: 25px;
+}
+label:nth-child(1) {
+    background-color: midnightblue;
+    border: 2px silver solid;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+label:nth-child(1):hover, button:hover {
+    cursor: pointer;
+}
+label:nth-child(1):active, button:active {
+    background-color: blueviolet;
+}
+#file-input {
+    display: none;
+}
